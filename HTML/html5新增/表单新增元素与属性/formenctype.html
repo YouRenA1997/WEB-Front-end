@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>formenctype</title>
+</head>
+<!--
+在HTML4中，表单具有一个enctype属性，该属性用于指定在表单发送服务器之前应该如何对表单内的数据进行编码。
+在HTML5中，可以使用formenctype属性对表单元素分别指定不同的编码方式。
+
+值	描述
+application/x-www-form-urlencoded: 默认。在发送前对所有字符进行编码。将空格转换为 "+" 符号，特殊字符转换为 ASCII HEX 值。
+multipart/form-data: 不对字符编码。当使用有文件上传控件的表单时，该值是必需的。
+text/plain: 将空格转换为 "+" 符号，但不编码特殊字符。
+-->
+<body>
+    <form>
+        <input type="text" formenctype="text/plain">
+        <input type="text" formenctype="multipart/form-data">
+        <input type="text" formenctype="application/x-www-form-urlencoded">
+
+    </form>
+</body>
+</html>

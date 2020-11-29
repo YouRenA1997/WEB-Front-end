@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>引入外部独立的js文件</title>
+</head>
+<body>
+<!--结束的</script>不能省略-->
+<!--js文件中不能出现<script></script>标记-->
+<!--<script></script>中不能包含其他JavaScript代码，也不会执行-->
+<!--引入外部js文件的同时，也在页面中嵌入<script></script>-->
+<script type="text/javascript" src="js/1.js">
+//不能包含其他JavaScript代码，也不会执行
+</script>
+<script type="text/javascript">
+    alert('hhhhh')
+</script>
+</body>
+</html>

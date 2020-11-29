@@ -1,0 +1,32 @@
+新增输入类型：
+color
+date
+datetime
+datetime-local
+email
+month
+number
+range
+search
+tel
+time
+url
+week
+
+新增输入属性
+autocomplete
+autofocus
+form
+formaction
+formenctype
+formmethod
+formnovalidate
+formtarget
+height 和 width
+list
+min 和 max
+multiple
+pattern (regexp)
+placeholder
+required
+step

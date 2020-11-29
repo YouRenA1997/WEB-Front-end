@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本框的pattern属性</title>
+</head>
+<!--
+pattern 属性规定用于验证 <input> 元素的值的正则表达式。
+注意：pattern 属性适用于下面的 input 类型：text、search、url、tel、email 和 password。
+提示：请使用全局的 title 属性来描述模式以帮助用户。
+提示：可以在我们的 JavaScript 教程中学习更多有关 正则表达式 的知识。
+-->
+<body>
+<form action="#">
+    Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+    <input type="submit">
+</form>
+</body>
+</html>

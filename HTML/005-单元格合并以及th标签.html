@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>单元格合并以 和 th标签</title>
+</head>
+<body>
+<!--row合并的时候，删除后面的单元格-->
+<!--col合并的时候，删除前面后面的单元格都行-->
+<!--th标签，也是一个单元格标签，比td多的是居中、加粗,通常是表头标签-->
+<table border="1px" width="50%" height="150px" align="center" >
+    <tr>
+        <td>员工编号</td>
+        <td>员工薪资</td>
+        <td>部门名称</td>
+    </tr>
+    <tr>
+        <th>员工编号</th>
+        <th>员工薪资</th>
+        <th>部门名称</th>
+    </tr>
+    <tr align="center">
+        <td>1</td>
+<!--    合并3和4    -->
+        <td colspan="2">3</td>
+<!--    <td>4</td>-->
+    </tr>
+    <tr align="center">
+        <td>5</td>
+        <td>6</td>
+<!--    7和0合并    -->
+        <td rowspan="2">7</td>
+    </tr>
+    <tr align="center">
+        <td>8</td>
+        <td>9</td>
+<!--    <td>0</td>-->
+    </tr>
+</table>
+</body>
+</html>

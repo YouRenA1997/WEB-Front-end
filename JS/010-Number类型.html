@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>number</title>
+</head>
+<body>
+<script type="text/javascript">
+    /*
+    1.number包括哪些值：-1 0 1 2 2.3 3.14 100 ...NaN Infinity
+        整数、小数、正数、负数、无穷大、不是数值，都属于number类型
+    2.isNaN（）：true：不是一个数字，false：表示是一个数字
+    3.parseInt（）函数:将字符转成数字，并且取整数位
+    4.paraFloat（）函数：可以将字符串自动转换为数字
+    5.Math.ceil（）函数：向上取整
+     */
+
+    var v1= 1;
+    var v2 = 3.14;
+    var v3 = -100;
+    var v4 = NaN;
+    var v5 = Infinity;
+
+    //number
+    alert(typeof v1)
+    alert(typeof v2)
+    alert(typeof v3)
+    alert(typeof v4)
+    alert(typeof v5)
+
+    //关于NaN（表示Not a number）：不是一个数字。但属于number类型
+    //什么情况下结果是一个NaN?
+        //运算结果本应该是一个数字，最后算完不是一个数字的时候，结果只NaN
+    var a =100
+    var b = "hhh"
+    alert(a/b)
+
+    var e = "abc"
+    var f = 10
+    alert(e+f)//结果是字符串拼接abc10，而不是NaN
+
+    //Infinity(当除数为0的时候，结果为无穷大)
+    alert(10/0)
+    alert(10/3)//结果是3.33333333333333333
+
+    //关于isNaN函数？
+    //用法：isNaN（数据），true：不是一个数字，false：表示是一个数字
+    //is Not a Number
+    function sum(a,b) {
+        if (isNaN(a) || isNaN(b)){
+            alert('参与运算的必须是数字')
+            return;
+        }
+        return a+b;
+    }
+</script>
+<input type="button" value="加法运算" onclick="sum('哈哈哈','哈哈哈')">
+<input type="button" value="Math.ceil（）" onclick="alert(Math.ceil(3.888))">
+
+<input type="button" value="parseInt（）" onclick="alert(parseInt('3.9999'))">
+<input type="button" value="parseInt（）" onclick="alert(parseInt(3.9999))">
+
+<input type="button" value="parseFloat（）" onclick="alert(parseFloat('3.14')+1)">
+
+</body>
+</html>

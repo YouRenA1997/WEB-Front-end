@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    /*
+    JS函数在调用的时候，参数的类型没有限制，参数个数没有限制
+    JS函数名字不能重名，也就不能重载
+    同名函数出现，后面声明的，覆盖前面声明的
+     */
+    function sum(a,b) {
+        return a+b;
+    }
+    //调用函数sum
+    var retValue = sum(1,2)
+    alert(retValue)
+
+    var retValue2 = sum("卢范榕")
+    alert(retValue2)
+
+    //NaN是一个具体存在的值，该值表示不是数字：Not a Number
+    var retValue3 = sum()
+    alert(retValue3)
+
+    var retValue4= sum(1,2,3)
+    alert(retValue4)
+</script>
+</body>
+</html>

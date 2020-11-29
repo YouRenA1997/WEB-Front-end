@@ -1,0 +1,14 @@
+/*
+文本装饰
+ */
+a{
+    text-decoration: none;
+}
+/*
+cursor:鼠标样式
+    pointer和hand都是小手，但是hand有浏览器兼容问题。建议使用pointer
+ */
+#baidu{
+    text-decoration:underline;
+    cursor: pointer;
+}

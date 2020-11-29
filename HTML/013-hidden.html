@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hidden控件</title>
+</head>
+<body>
+<form action="http://localhost:8080/jd/login">
+<!--隐藏域控件，网页上看不到，但是表单提交的时候，数据会自动提交给服务器-->
+<!--http://localhost:8080/jd/login?47=123456&usercode=1111111-->
+    <input type="hidden" name="47" value="123456">
+    用户代码：
+    <input type="text" name="usercode">
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>

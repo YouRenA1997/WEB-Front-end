@@ -1,0 +1,5 @@
+window.alert('这是js文件01')
+window.alert('这是js文件02')
+window.alert('这是js文件03')
+window.alert('这是js文件04')
+window.alert('这是js文件05')

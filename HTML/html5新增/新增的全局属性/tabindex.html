@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>连接属性，和表单属性可以通过tab键移动</title>
+</head>
+<body>
+<a href="#" tabindex="1">1</a>
+<a href="#" tabindex="2">2</a>
+<a href="#" tabindex="3">3</a>
+<form tabindex="4">
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</form>
+<form tabindex="-1"><!--页面上移动不到，但开发时可以用-->
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</form>
+</body>
+</html>

@@ -1,0 +1,5 @@
+contentEditable：可编辑
+designMode：页面是否可编辑
+hidden:元素不可见状态
+spellcheck:拼写检查
+tabindex:按TAB建移动页面中的属性

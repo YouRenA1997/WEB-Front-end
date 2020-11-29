@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作为特定标记的属性值使用</title>
+</head>
+<body>
+<!--
+1.实现功能：点击按钮，弹出消息框。
+2.JS是一门驱动语言。依靠事件驱动，然后执行对应的程序。
+3.在JS中有很多的事件，其中有个事件叫做鼠标单击（click）。
+4.每个事件都有对应的事件句柄，事件句柄是在事件之前加一个on。click事件的句柄是onclick。
+5.事件句柄是以HTML标签的属性存在的。
+6.onclick="JS代码"，执行原理：页面打开的时候，js代码并不会执行，只是把这段onclick代码注册到按钮的click事件上了
+7.按钮发生click事件后，注册在onclick后面的js代码会被浏览器自动调用
+8.js中的字符串可以使用单引号，也可以使用双引号，没有限制
+9.语句结束后，可以使用分号，也可以不加分号
+-->
+<!--
+实现弹窗：
+在JS中有一个内置对象window（浏览器对象），全部小写，可以拿来直接调用
+Window对象有一个函数alter，用法[window.]alter("消息")；
+
+-->
+<input type="button" value="Hello" onclick="window.alert('hello js')">
+<input type="button" value="Hello" onclick="window.alert('hello js')
+                                            window.alert('123')
+                                            window.alert('456')
+                                            window.alert('789')">
+<!--
+通过调用"JavaScript:"的方式来调用JavaScript的函数或方法
+-->
+<a href="javascript:alert('你点击了这个超链接')">请单击这里</a>
+</body>
+</html>

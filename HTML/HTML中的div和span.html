@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML中的div和span</title>
+    <style type="text/css">
+        .div1{
+            width: 500px;
+            height: 200px;
+            color: crimson;
+            font-size: 200px;
+        }
+        .div2{
+            width: 500px;
+            height: 200px;
+            color: aqua;
+            font-size: 200px;
+        }
+        #div3 a{
+            width: 500px;
+            height: 200px;
+            color: #1d800f;
+            font-size: 200px;
+        }
+    </style>
+</head>
+<body>
+<!--
+1.div和span是什么？有什么用？
+    *div和span都可以成为图层
+    *图层的作用是为了保证页面的灵活布局
+    *div就是一个一个的盒子，div嵌套div就是盒子套盒子
+    *div和span是可以定位的，只要定下div的左上角的x轴和y轴坐标即可
+    *div默认独占一行，承载什么都可以
+    *span不独占一行，文本容器
+    *可以嵌套html标签
+2.最早的网页是采用table布局的，但table不灵活，太死板
+    现代的网页开发中div布局使用最多，几乎很少使用table布局了
+3.span不会独占一行
+
+【块元素】：<h1>、<p>、<ul>,<span>独占一行，从新的行开始
+【内联元素】：<b>、<a>、<img>，<div>不会独占一行
+-->
+<div id="div1" class="div1">pppppp</div>
+<div id="div2" class="div2">xxxxxx</div>
+<div id="div3" class="div3"><a href="https://www.baidu.com/">百度</a></div>
+<span id="span1" class="div1">1111</span>
+<span id="span2" class="div2">2222</span>
+</body>
+</html>

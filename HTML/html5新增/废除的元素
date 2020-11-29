@@ -1,0 +1,4 @@
+能使用CSS代替的元素：basefont、big、center、font、s、tt、u、
+不能使用frame框架，但支持iframe
+只有部分浏览器支持的元素
+其他被废除的元素

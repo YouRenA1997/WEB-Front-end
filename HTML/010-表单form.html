@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单form</title>
+</head>
+<body>
+<!--
+1.表单的作用:收集用户信息，用户提交表单，提交到服务器
+2.一个网页可以有多个表单
+3.表单最终是要提交数据给服务器得，
+-->
+<form action="服务器地址"></form>
+<!--画一个提交按钮，这个按钮可以提交表单-->
+<!--画按钮可以使用input输入域
+type:
+submit：提交按钮，具有提交表单的能力
+botton：普通按钮
+text：文本框
+password：密码框
+checkbox：复选框
+radio：单选按钮
+reset:撤销
+
+value:对于按钮来说设置按钮上显示的文本。
+value：对于文本框，就是个默认值。
+
+-->
+<!--
+表单是以什么格式提交数据给服务器的？
+https://localhost:8080/jd/login?loginName=000&loginPwd=111
+格式：action？name=value&name=value&name=value&name=value&name=value&name=value
+HTTP协议规定必须以这种格式提交给服务器，提交的是name和value
+有name这个属性，一律提交给给服务器。
+-->
+<form action="服务器地址">
+    <input type= "reset">
+    <input type= "text">
+    <input type= "submit" value="登录">
+    <input type= "button" value="普通按钮">
+    <input type= "checkbox">
+    <input type= "password">
+    <input type= "radio">
+</form>
+<br/>
+
+<form action="https://www.baidu.com">
+    <input type="text">
+    <input type="submit" value="百度">
+</form>
+
+<br/>
+<br/>
+
+<form action="https://localhost:8080/jd/login">
+    <input type="text" name="loginName" placeholder="登录名称"><br>
+    <input type="password" name="loginPwd" placeholder="登录密码" minlength="6"><br>
+    <input type="submit" value="登录">
+    <input type="reset" value="取消">
+</form>
+<br>
+<br>
+
+<!--
+用户注册：
+用户名
+姓名
+密码
+确认密码
+性别
+兴趣爱好
+学历
+简介
+-->
+<center>
+<!--
+采用post提交，提交的数据不会再浏览器的地址栏中出现
+采用get提交，提交的数据会再浏览器的地址栏中出现
+默认是get，除非是特别写post，包括超链接，也是get提交数据
+超链接是get请求
+post比较安全
+
+-->
+<form action="https://www.baidu.com" method="post">
+    <input type="text" name="username" placeholder="用户名">
+    <br>
+    <input type="password" name="password" placeholder="密码">
+    <br>
+<!--    确认密码在前端实现，不用提交，没有name-->
+    <input type="password" placeholder="确认密码">
+    <br>
+    <br>
+    性别
+<!--
+ checked：默认选上
+ 单选按钮的value必须手动加上去-->
+    <input type="radio" name="sex" value="1" checked/>男
+    <input type="radio" name="sex" value="0"/>女
+    <input type="radio" name="sex" value="2"/>人妖
+    <br>
+    兴趣爱好：
+    <!--name要一样，是一个组，实现单选效果-->
+    <input type="checkbox" name="hobby" value="basketball">打球
+    <input type="checkbox" name="hobby" value="reading">看书
+    <input type="checkbox" name="hobby" value="smoke" checked>抽烟
+    <input type="checkbox" name="hobby" value="swimming">游泳
+    <input type="checkbox" name="hobby" value="drinking" checked>喝酒
+    <br>
+<!--    下拉列表-->
+    学历:
+    <select name="grade" size="1">
+        <option value="cz">初中</option>
+        <option value="gz">高中</option>
+        <option value="dz">大专</option>
+<!--        默认选中：selected-->
+        <option value="bk" selected>本科</option>
+        <option value="ss">硕士</option>
+    </select>
+    <br>
+<!--    文本域
+没有value属性，用户自己写
+-->
+    简介：<br>
+    <textarea rows="5" cols="10" name="introduce"></textarea>
+
+</form>
+</center>
+</body>
+</html>

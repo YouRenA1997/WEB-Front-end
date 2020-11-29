@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>局部变量和全局变量</title>
+</head>
+<body>
+<script type="text/javascript">
+    /*
+    全局变量：
+        在函数体之外声明的变量属于全局变量，全局变量的声明周期是：浏览器打开到浏览器关闭，占用浏览器内存，尽量不用
+    局部变量：
+        在函数体中声明，形参也属于局部变量，
+        局部变量的声明周期是：函数开始在执行时局部变量的内存空间开辟，函数执行结束之后局部变量空间释放
+     */
+    var i = 100;
+    function accessI() {
+        alert('全局变量i='+i);
+    }
+
+    function accessII() {
+        var i = 50;
+        //就近原则，访问局部变量
+        alert("局部变量i="+i);
+    }
+    /*
+    当变量声明的时候没有使用var关键字，无论是在什么位置声明的，在JavaScript中都是全局变量
+     */
+    function accessIII() {
+        myname="李四"
+    }
+    accessIII();
+    alert('我的名字是'+myname+',是一个没有var关键字声明的全局变量');
+</script>
+<input type="button" value="全局变量" onclick="accessI()">
+<input type="button" value="局部变量" onclick="accessII()">
+</body>
+</html>

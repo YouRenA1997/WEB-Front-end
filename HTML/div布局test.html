@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>div布局</title>
+    <style type="text/css">
+        body{
+            margin: 0px;
+        }
+        /*#前面的div可加可不加*/
+        #container{
+            with:100%;
+            height: 950px;
+            background-color: #ff110e;
+        }
+        div#heading{
+            width:100%;
+            height: 10%;
+            background-color: darkturquoise;
+        }
+        div#content_menu{
+            width: 30%;
+            height: 80%;
+            background-color: aqua;
+            float: left;
+
+        }
+        div#content_body{
+            width: 70%;
+            height: 80%;
+            background-color:royalblue;
+            float: left;
+
+        }
+        div#footing{
+            width:100%;
+            height:85%;
+            background-color: #ce4dd1;
+            /*清除浮动，不然效果显示不出来*/
+
+            /*float: left;*/
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <!--全局控制的div-->
+    <div id="container">
+        <!--头部div-->
+        <div id="heading">头部</div>
+        <!--左半部分，内容菜单-->
+        <div id="content_menu">内容菜单</div>
+        <!--右半部分，内容主体-->
+        <div id="content_body">内容主体</div>
+        <!--底部-->
+        <div id="footing">底部</div>
+    </div>
+</body>
+</html>

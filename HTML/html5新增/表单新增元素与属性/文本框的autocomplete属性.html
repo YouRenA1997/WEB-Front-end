@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>autocomplete</title>
+</head>
+<body>
+<!--
+autocomplete 属性规定表单是否应该启用自动完成功能。
+自动完成允许浏览器预测对字段的输入。当用户在字段开始键入时，浏览器基于之前键入过的值，应该显示出在字段中填写的选项。
+提示：autocomplete "on" 适用于表单，"off" 适用于特定的输入字段，反之亦然。
+-->
+<form action="demo_form.html" method="get" autocomplete="on">
+    First name:<input type="text" name="fname"><br>
+    E-mail: <input type="email" name="email"><br>
+    <input type="submit">
+</form>
+<!--
+autocomplete 属性规定输入字段是否应该启用自动完成功能。
+自动完成允许浏览器预测对字段的输入。当用户在字段开始键入时，浏览器基于之前键入过的值，应该显示出在字段中填写的选项。
+注意：autocomplete 属性适用于下面的 <input> 类型：text、search、url、tel、email、password、datepickers、range 和 color。
+-->
+<form action="demo_form.html" autocomplete="on">
+    First name:<input type="text" name="fname"><br>
+    Last name: <input type="text" name="lname"><br>
+    E-mail: <input type="email" name="email" autocomplete="off"><br>
+    <input type="submit">
+</form>
+</body>
+</html>

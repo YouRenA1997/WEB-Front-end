@@ -1,0 +1,40 @@
+<!--
+脚本快在一个页面可以多次出现，没有要求
+出现位置也没有要求
+-->
+<script type="text/javascript" defer>
+    alert('defer,文档加载完毕后执行的脚本')
+</script>
+
+<script type="text/javascript">
+//alter有阻塞当前页面加载的作用
+    alert("文档最前面")
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>直接嵌入JavaScript代码</title>
+    <script type="text/javascript">
+        alert("head标签里面")
+    </script>
+</head>
+<body>
+<!--脚本块的方式-->
+<!--
+暴露在脚本块当中的程序，在页面打开的时候执行，
+并且遵守自上而下的顺序依次逐行执行
+这个代码执行不需要事件
+-->
+<input type="button" value="按钮01">
+<script type="text/javascript">
+    alert("HelloWorld01")
+    alert("HelloWorld02")
+</script>
+<input type="button" value="按钮02">
+</body>
+</html>
+<script type="text/javascript">
+    alert("文档最后面")
+</script>

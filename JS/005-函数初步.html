@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS中的函数</title>
+</head>
+<body>
+<script type="text/javascript">
+    /*
+    JS中的函数相当于JAVA中的方法
+     */
+    /*
+    JS函数的定义，语法格式：
+    JS中的函数不需要指定返回类型，返回什么类型都行
+    第一种方式：
+
+    function 函数名（形式参数列表）{
+        函数体；
+    }
+
+    第二种方式：
+
+    函数名 = function（形式参数列表）{
+        函数体；
+    }
+
+     */
+    //函数不调用，不调用不执行
+    function sum(a,b) {
+        alert(a + '+' + b + '='+(a+b))
+    }
+    sayHello = function(username){
+        alert("sayHello"+username)
+    }
+    sum(5,2)
+    sayHello("张三")
+
+</script>
+<input type="button" value="Hello" onclick="sayHello('卢范榕')">
+<input type="button" value="计算2+4的求和" onclick="sum(2,4)">
+</body>
+</html>

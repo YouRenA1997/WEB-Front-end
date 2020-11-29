@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML表格-thead tbody tfoot</title>
+</head>
+<body>
+<table border="1px" width="50%" height="150px" align="center">
+    <thead>
+        <tr align="center">
+            <td>员工编号</td>
+            <td>员工薪资</td>
+            <td>部门名称</td>
+        </tr>
+        <tr>
+            <th>员工编号</th>
+            <th>员工薪资</th>
+            <th>部门名称</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr align="center">
+            <td>1</td>
+            <!--    合并3和4    -->
+            <td colspan="2">3</td>
+            <!--    <td>4</td>-->
+        </tr>
+        <tr align="center">
+            <td>5</td>
+            <td>6</td>
+            <!--    7和0合并    -->
+            <td rowspan="2">7</td>
+        </tr>
+        <tr align="center">
+            <td>8</td>
+            <td>9</td>
+            <!--    <td>0</td>-->
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr align="center">
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+        </tr>
+    </tfoot>
+</table>
+</body>
+</html>
